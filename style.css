@@ -1,0 +1,500 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    
+}
+body{
+    margin: 0 0;
+    height: 100%;
+    margin-top: 5.2em;
+    
+}
+.back{
+    position: absolute;
+    background-image: url(images/background_tarp.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index:-1;
+}
+.green_back{
+    position: absolute;
+    background-image: url(images/tarp_green.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index:-1;
+}
+.blue_back{
+    position: absolute;
+    background-image: url(images/tarp_blue.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index:-1;
+}
+.orange_back{
+    position: absolute;
+    background-image: url(images/tarp_orange.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index:-1;
+}
+.back2{
+    position: absolute;
+    background-image: url(images/tarponly.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    z-index:-2;
+}
+.back3{
+    position: absolute;
+    background-image: url(images/tarponly.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 150%;
+    z-index:-2;
+}
+.back4{
+    position: absolute;
+    background-image: url(images/tarponly.png);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 250%;
+    z-index:-2;
+}
+.nav_bar{
+    background-image: url(images/tarponly.png);
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.2);
+    top: 0;
+    height: 3.5em;
+    border-bottom: 1.5px solid black;
+    
+}
+.nav_bar_burg{
+    
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255,0.2);
+    top: 0;
+    height: 3.5em;
+    border-bottom: 1.5px solid black;
+    
+}
+
+.header_list{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    height: 4.9em;
+    padding: 0;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+
+.li_header {
+    width: 3em;
+    height: 4em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.li_header_2{
+    width: 3em;
+    height:4em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.2em;
+    
+}
+.logo{
+   width: 7.5em;
+   height: 3em;
+ 
+}
+
+
+
+#toggle{
+    opacity: 0;
+    
+  }
+  #toggle:checked ~ 
+  .menu_aan {
+    right: 0 ;
+  }
+
+  .hamburger-menu{
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .knopske {
+    position: fixed;
+    width: 2.5em;
+    height: 2.5em;
+    z-index: 1;
+    background-image: url(images/burger.png);
+    background-position: center;
+    background-size: 2.5em;
+    background-repeat: no-repeat;
+    transition-duration: 0.25s;
+  }
+  
+  .menu_aan {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    right: -200%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 1em 0;
+    padding-top: 15em;
+    background-image: url(images/background_red.png);
+    background-position: center;
+    background-size: cover;
+    background-color: white;
+    transition-duration: 0.25s;
+  }
+  .burger_item {
+    display: block;
+    padding: 0.2em 3em;
+    color: #000000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4em;
+    font-weight: 60;
+    transition-duration: 0.25s;
+    border-top: 1.5px solid black;
+  }
+  .burger_item:hover {
+    background-color: #d8342ec2;
+  }
+  
+  .text{
+    margin-top: 26.77em;
+    padding-left: 0.7em;
+    padding-right: 5em;
+    font-size: 1.3em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 60;
+    color: #000000;
+    margin-bottom: 6em;
+    border-top: 1px solid rgb(143, 142, 142);
+  }
+  .text p{
+    
+    padding-right: 3em;
+    width: 100%;
+  }
+  .text h1{
+    
+    margin-top: 0.5em;
+  }
+
+
+footer ul{
+    margin: 0 0;
+    width:100%;
+    height:100%;
+    background-color:#ffffff00;
+    display:grid;
+    grid-template-columns: 11em 11em;
+    gap: 0.7em;
+    
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  
+footer ul div{
+      background-color:#33333300;
+      border: 1px solid gray;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:start;
+      font-size:3em;
+      font-family:sans-serif;
+      height: 3.5em;
+      flex-direction: column;
+      
+    }
+  
+  
+.a_about_img{
+    width: 90%;
+    height: 80%;
+    padding: 0 0;
+    margin: 0 0;
+    background-image: url(images/about_bag.png);
+    background-size: cover;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+.about_txt{
+    width: 90%;
+    height: 20%;
+    font-size: 0.5em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.a_product_img{
+    width: 90%;
+    height: 80%;
+    padding: 0 0;
+    margin: 0 0;
+    background-image: url(images/product_bag.png);
+    background-size: cover;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+.product_txt{
+    width: 90%;
+    height: 20%;
+    font-size: 0.5em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.a_sustain_img{
+    width: 90%;
+    height: 80%;
+    padding: 0 0;
+    margin: 0 0;
+    background-image: url(images/sustain_bag.png);
+    background-size: cover;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+.sustain_txt{
+    width: 90%;
+    height: 20%;
+    font-size: 0.45em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.a_home_img{
+    width: 90%;
+    height: 80%;
+    padding: 0 0;
+    margin: 0 0;
+    background-image: url(images/home_bag.png);
+    background-size: cover;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+.home_txt{
+    width: 90%;
+    height: 20%;
+    font-size: 0.5em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+}
+
+.text_about{
+    font-size: 2.5em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 4.1em;
+    margin-top: 5.2em;
+}
+.p_about{
+    font-size: 1em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2.75em;
+    margin-top: 3.5em;
+    margin-right: 2.5em;
+    border: 1px solid rgb(180, 177, 177);
+    padding: 1em 1em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    padding-bottom: 3em;
+}
+
+.dubble{
+    font-size: 1em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2.75em;
+    padding-top: 0;
+    margin-top: 0;
+    margin-right: 2.5em;
+    border: 1px solid rgb(180, 177, 177);
+    padding: 1em 1em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    padding-bottom: 3em;
+    
+}
+
+.footer_about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(images/tarponly.png);
+    height: 10em; 
+    margin-top: 47%;
+    border-top: 2px solid black;
+}
+.footer_about_a{
+    width: 7em;
+    height: 7em;
+    background-color: rgb(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(176, 175, 175);
+}
+.about_foot_img{
+    width: 100%;
+    height: 80%;
+    background-image: url(images/about_bag.png);
+    background-size: cover;
+}
+.home_foot_img{
+    width: 100%;
+    height: 80%;
+    background-image: url(images/home_bag.png);
+    background-size: cover;
+}
+.sustain_foot_img{
+    width: 100%;
+    height: 80%;
+    background-image: url(images/sustain_bag.png);
+    background-size: cover;
+}
+.products_foot_img{
+    width: 100%;
+    height: 80%;
+    background-image: url(images/product_bag.png);
+    background-size: cover;
+}
+.about_foot_txt{
+    width: 90%;
+    height: 20%;
+    font-size: 0.8em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+}
+.button_door{
+    display: block;
+    width: 30%;
+    font-size: 1em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+    text-align: center;
+    padding: 1em 1em;
+    justify-self: center;
+    margin-top: 2em;
+    background-image: url(images/tarponly.png);
+    border: 1px solid rgb(162, 158, 158);
+}
+.text_products{
+    font-size: 2.5em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 0.5em;
+    margin-top: 5.4em;
+}
+.footer_products{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(images/tarponly.png);
+    height: 10em; 
+    margin-top: 70%;
+    border-top: 2px solid black;
+}
+
+.foto {
+    margin-left: 2.75em;
+    margin-right: 2.5em;
+    width: auto;
+    height: 16em;
+    padding: 1em 1em;
+    border: 1px solid rgb(166, 166, 166);
+
+}
+.foto div {
+    background-image: url(images/wall.png);
+    background-size: cover;
+    width: auto;
+    height: 16em;
+    border-radius: 1em;
+}
+
+.text_sustain{
+    font-size: 2em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 0.5em;
+    margin-top: 4.5em;
+}
+
+.s_about{
+    font-size: 1em;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2.75em;
+    margin-top: 3.5em;
+    margin-right: 2.5em;
+    border: 1px solid rgb(180, 177, 177);
+    padding: 1em 1em;
+    line-height: 1.5em;
+    margin-bottom: 0;
+    padding-bottom: 1em;
+}
